@@ -91,7 +91,7 @@ player = pygame.image.load("hearteyes.jfif")
 heart = pygame.image.load("heart1.jfif")
 evil = pygame.image.load("evil1.jfif")
 
-mixer.music.load("music1.wav")
+mixer.music.load("music1.mp3")
 mixer.music.play()
 
 while True:
