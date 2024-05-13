@@ -1,8 +1,10 @@
 import pygame
 import random
 import sys
-from pygame.locals import Rect
+from pygame.locals import *
+from pygame import mixer
 pygame.init()
+mixer.init()
 
 def step(event,xchange,ychange):
     step = 3
@@ -88,6 +90,9 @@ xchange , ychange = 0 , 0
 player = pygame.image.load("hearteyes.jfif")
 heart = pygame.image.load("heart1.jfif")
 evil = pygame.image.load("evil1.jfif")
+
+mixer.music.load("music1.wav")
+mixer.music.play()
 
 while True:
     for event in pygame.event.get():
